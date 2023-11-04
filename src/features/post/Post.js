@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import Comment from "./Comment";
 import { fDateTime } from "../../utils/formatTime";
-import PostFrom from "./PostFrom";
 
 function getColorFromContent(content) {
   const hash = content.split("").reduce((acc, char) => {
@@ -38,7 +37,6 @@ const Post = ({ post }) => {
 
   return (
     <Box>
-      <PostFrom />
       <Card sx={{ marginBottom: 2, mt: 2 }}>
         <CardContent sx={{}}>
           <Typography variant="h4" component="div" sx={{ textAlign: "center" }}>
